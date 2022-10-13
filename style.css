@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.fond{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex: 1 ;
+}
+
+.panneau{
+    height: 100%;
+
+    flex: 1;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: 1s cubic-bezier(.23,.02,1,1);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.div1{
+    background-image: url(paysage1.jpeg);
+}
+
+.div2{
+    background-image: url(paysage2.jpeg);
+}
+
+.div3{
+    background-image: url(paysage3.jpeg);
+}
+
+.div4{
+    background-image: url(paysage4.jpeg);
+}
+
+.div5{
+    background-image: url(paysage5.jpeg);
+}
+
+.panneau:hover{
+    flex: 2.5;
+}
+
+.msg{
+    color: white;
+}
+
+.panneau .msg{
+    opacity: 0;
+    align-items: center;
+}
+
+.panneau:hover .msg{
+    opacity: 100%;
+    transition: 0.8s;
+    transform: translateY(-400px);
+}
